@@ -16,7 +16,7 @@ server.post('/projects', async (req, res) =>{
     }catch(error){res.status(500).json(error)}
 })
 
-server.post('/projects/:id', async (req, res) =>{    
+server.post('/projects/:id', async (req, res) =>{     
     try{
         const {id} = req.params;
         const action = req.body;
